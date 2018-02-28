@@ -37,7 +37,7 @@ ul li a:hover{
     text-decoration: underline;
 }
 
-@media screen and (min-width:750px){
+@media screen and (min-width:650px){
    nav ul {
        justify-content: flex-end;
        flex-direction: row;
