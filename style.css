@@ -118,6 +118,24 @@ align-items: center; /*content aligned vertically*/
   height: 90%;
 }
 
+.team__content img {
+  height: 30vh; 
+  border-radius: 50%; 
+  margin: 3%; 
+}
+
+.team__links {
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%; 
+}
+
+.team__links img {
+  width: 40px; 
+}
+
 
 /* Media Queries */
 
