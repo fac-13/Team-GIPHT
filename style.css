@@ -92,12 +92,14 @@ ul li a:hover {
   justify-content: center;
   margin: 0 auto;
   width: 100%;
+  padding-bottom: 100px;
 }
 
 .contact__form {
   display: flex;
   flex-direction: column;
-  min-width: 50%;
+  width: 100%;
+  padding: 20px;
 }
 
 input[type=text], input[type=email], textarea {
@@ -109,21 +111,27 @@ input[type=text], input[type=email], textarea {
 .form-row {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   font-size: 1.3rem;
   padding: 5px;
 }
 
 .label {
-  min-width: 150px;
   flex: 1;
-  margin-right: 35px;
 }
 
 .contact__input {
   flex: 2;
-  width: 100%;
+}
+
+textarea {
+  height: 150px;
+}
+
+.form-row button {
+  align-self: flex-start;
+  width: 100px;
 }
 
 /* Media Queries */
