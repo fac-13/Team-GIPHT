@@ -1,18 +1,46 @@
+body {
+    margin: 0; 
+    padding: 0;
+}
+
+
 nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: #f9985c;
+    margin: 0;
+    padding: 0; 
 
 }
 
 nav ul {
     display: flex;
     list-style-type: none;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+
     
 }
 
 nav ul li {
-    margin: 5%;
+    margin: 10% 5%;
+    font-size: 1.3rem;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+@media screen and (min-width:750px){
+   nav {
+       justify-content: flex-end;
+   }
+
+   nav ul {
+       justify-content: space-around;
+       flex-direction: row;
+       margin-right: 70px;
+   }
+
 }
