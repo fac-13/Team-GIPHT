@@ -86,7 +86,6 @@ ul li a:hover {
   text-transform: uppercase;
 }
 
-
 /* Team Section */
 
 .team {
@@ -136,6 +135,53 @@ align-items: center; /*content aligned vertically*/
   width: 40px; 
 }
 
+/* Contact Section */
+.contact {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 100px;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+}
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 5px;
+}
+
+.label {
+  flex: 1;
+}
+
+.contact__input {
+  flex: 2;
+}
+
+textarea {
+  height: 150px;
+}
+
+.form-row button {
+  align-self: flex-start;
+  width: 100px;
+}
 
 /* Media Queries */
 
@@ -150,5 +196,7 @@ align-items: center; /*content aligned vertically*/
     font-size: 1.2rem;
   }
 }
+
+
 
 /* End */
