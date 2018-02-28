@@ -87,7 +87,44 @@ ul li a:hover {
 }
 
 /* Contact Section */
+.contact {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
 
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  min-width: 50%;
+}
+
+input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.3rem;
+  padding: 5px;
+}
+
+.label {
+  min-width: 150px;
+  flex: 1;
+  margin-right: 35px;
+}
+
+.contact__input {
+  flex: 2;
+  width: 100%;
+}
 
 /* Media Queries */
 
