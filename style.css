@@ -2,7 +2,7 @@
 
 * {
   margin: 0;
-  padding: 0;
+  padding: 0;5vh
 }
 
 html {
@@ -37,7 +37,14 @@ nav {
   background-color: #2d98da;
   margin: 0;
   padding: 0;
+
   height: 50px;
+
+  width: 100%;
+
+  position: fixed;
+  z-index: 1;
+
 }
 
 nav ul {
@@ -114,11 +121,18 @@ nav ul li a:active {
 /* Team Section */
 
 .team {
+  text-align: center;
+  padding-top: 5vh;
+  min-height: 100vh;
+}
+
+.team__container {
 display:flex; 
 flex-direction: column;
-justify-content: center; /*content aligned horizontally */
+justify-content: space-around;
 align-items: center; /*content aligned vertically*/
 }
+
 .team__row {
   display: flex;
   flex-direction: column;
@@ -132,31 +146,33 @@ align-items: center; /*content aligned vertically*/
   display: flex;
   flex-direction: column; 
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background-color: white; 
-  border: 3px solid #0a0a0a;
-  border-radius: 5px;
   margin: 3%; 
   height: 75vh;
   width: 100%;
 }
 
 .team__content img {
-  height: 30vh; 
+  border: 2px solid black;
   border-radius: 50%; 
-  margin: 3%; 
+  width: 60%;
 }
 
+.team__text h2 {
+  margin-bottom: 3vh;
+}
 .team__links {
   display: flex;
   list-style-type: none;
   flex-direction: row;
   justify-content: space-around;
-  width: 100%; 
+  width: 80%;
 }
 
 .team__links img {
-  width: 40px; 
+  border: none;
+  width: 10vw;
 }
 
 /* Contact Section */
@@ -166,8 +182,9 @@ align-items: center; /*content aligned vertically*/
   flex-direction: column;
   margin: 0 auto;
   width: 100%;
-  padding: 10px 0;
   background-color: #fafafa;
+  padding: 5vh 0;
+  height: 100vh;
 }
 
 .contact__heading {
@@ -241,17 +258,32 @@ textarea {
   }
   
   /* Team */
+
   .team {
-    margin: 10%;
+    background-color: lightseagreen;
+    padding-top: 10vh;
   }
   
   .team__row {
     flex-direction: row;
-    width: 100%;
     
   }
   .label {
     min-width: 120px;
+  }
+
+  .team__content {
+    border-radius: 5px;
+  }
+
+  .team__links img {
+    width: 5vh;
+  }
+  
+  /* Contact */
+
+  .contact {
+    padding-top: 10vh;
   }
 
   .contact__form {
@@ -259,6 +291,21 @@ textarea {
     padding: 0;
   }
 }
+
+@media screen and (min-width:1200px){
+ 
+  .team__container {
+    flex-direction: row;
+  }
+
+  .team__row{
+  
+  }
+
+
+}
+
+
 
 
 /* End */
