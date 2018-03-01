@@ -8,6 +8,7 @@
 html {
   font-size: 16px;
   font-family: 'Open Sans', sans-serif;
+  color: #2f3542;
 }
 
 /* Nav Bar */
@@ -16,7 +17,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background-color: #f9985c;
+  background-color: #2d98da;
   margin: 0;
   padding: 0;
 }
@@ -38,10 +39,14 @@ nav ul li {
 
 ul li a {
   text-decoration: none;
+  color: #fafafa;
+  border-bottom: solid 1px #2d98da;
+  transition: border-bottom 0.5s;
 }
 
-ul li a:hover {
-  text-decoration: underline;
+ul li a:hover,
+ul li a:active {
+  border-bottom: solid 1px #fafafa;
 }
 
 /* About Section */
