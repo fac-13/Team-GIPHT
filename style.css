@@ -131,6 +131,11 @@ nav ul li a:active {
   min-height: 100vh;
 }
 
+.team h1 {
+  color: #fafafa;
+  font-size: 2rem;
+}
+
 .team__container {
 display:flex; 
 flex-direction: column;
@@ -190,6 +195,10 @@ align-items: center; /*content aligned vertically*/
   background-color: #fafafa;
   padding: 5vh 0;
   height: 100vh;
+}
+
+.contact h2 {
+  font-size: 2rem;
 }
 
 .contact__msg {
