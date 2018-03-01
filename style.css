@@ -2,7 +2,7 @@
 
 * {
   margin: 0;
-  padding: 0;5vh#f9985
+  padding: 0;
 }
 
 html {
@@ -16,7 +16,7 @@ html {
 .contact__form button {
   color: #fafafa;
   font-size: 1.1rem;
-  background-color: #2d98da;
+  background-color: #16547b;
   height: 35px;
   width: 300px;
   display: inline-block;
@@ -34,7 +34,7 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #2d98da;
+  background-color: #16547b;
   margin: 0;
   padding: 0;
   height: 80px;
@@ -67,7 +67,8 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  border-bottom: solid 1px #2d98da;
+  color: #fafafa;
+  border-bottom: solid 1px #16547b;
   transition: border-bottom 0.5s;
   color: #fafafa;
   font-size: 1.4rem;
@@ -81,7 +82,7 @@ nav ul li a:active {
 /* About Section */
 
 .about {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image: linear-gradient(rgba(20, 44, 56, 0.8), rgba(20, 44, 56, 0.8)),
     url("img/hero.jpg");
   background-size: cover;
   background-attachment: fixed;
@@ -90,13 +91,18 @@ nav ul li a:active {
 }
 
 .about__text {
+  margin-top: 25px;
   color: #fafafa;
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 40%;
+  width: 90%;
+  /* header writing background */
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px 15px;
+  border-radius: 5px;
 }
 
 .about__text h1 {
@@ -106,7 +112,7 @@ nav ul li a:active {
 .about__text h1:after {
   display: block;
   height: 2px;
-  background-color: #2d98da;
+  background-color: #16547b;
   content: " ";
   width: 150px;
   margin: 0 auto;
@@ -128,6 +134,11 @@ nav ul li a:active {
   text-align: center;
   padding: 3vh 0;
   min-height: 100vh;
+}
+
+.team h1 {
+  color: #fafafa;
+  font-size: 2rem;
 }
 
 .team__container {
@@ -194,6 +205,10 @@ align-items: center; /*content aligned vertically*/
   background-color: #fafafa;
   padding: 5vh 0;
   height: 100vh;
+}
+
+.contact h2 {
+  font-size: 2rem;
 }
 
 .contact__msg {
@@ -293,11 +308,17 @@ footer {
     margin: 2%;
     font-size: 1.2rem;
   }
+
+  /* header */
+
+  .about__text {
+    width: 70%;
+  }
   
   /* Team */
 
   .team {
-    background-color: lightseagreen;
+    background-color: #134a6d;
     padding-top: 10vh;
   }
   
@@ -329,16 +350,17 @@ footer {
   }
 }
 
+@media screen and (min-width:840px){
+  .about__text {
+    width: 50%;
+  }
+}
+
 @media screen and (min-width:1200px){
  
   .team__container {
     flex-direction: row;
   }
-
-  .team__row{
-  
-  }
-
 
 }
 
