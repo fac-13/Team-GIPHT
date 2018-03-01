@@ -11,15 +11,33 @@ html {
   color: #2f3542;
 }
 
+/* Button */
+
+.contact__form button {
+  color: #fafafa;
+  font-size: 1.1rem;
+  background-color: #2d98da;
+  height: 35px;
+  width: 300px;
+  display: inline-block;
+  padding: 7px auto;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  border: 0;
+}
+
 /* Nav Bar */
 
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   background-color: #2d98da;
   margin: 0;
   padding: 0;
+  height: 50px;
 }
 
 nav ul {
@@ -37,15 +55,15 @@ nav ul li {
   padding: 0;
 }
 
-ul li a {
+nav ul li a {
   text-decoration: none;
   color: #fafafa;
   border-bottom: solid 1px #2d98da;
   transition: border-bottom 0.5s;
 }
 
-ul li a:hover,
-ul li a:active {
+nav ul li a:hover,
+nav ul li a:active {
   border-bottom: solid 1px #fafafa;
 }
 
@@ -55,6 +73,7 @@ ul li a:active {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("img/hero.jpg");
   background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
   width: 100%;
 }
@@ -76,7 +95,7 @@ ul li a:active {
 .about__text h1:after {
   display: block;
   height: 2px;
-  background-color: #fafafa;
+  background-color: #2d98da;
   content: " ";
   width: 150px;
   margin: 0 auto;
@@ -147,7 +166,8 @@ align-items: center; /*content aligned vertically*/
   flex-direction: column;
   margin: 0 auto;
   width: 100%;
-  padding-bottom: 10px;
+  padding: 10px 0;
+  background-color: #fafafa;
 }
 
 .contact__heading {
@@ -170,8 +190,10 @@ input[type=text], input[type=email], .contact__button {
 
 input[type=text], input[type=email], textarea {
   width: 100%;
-  padding: 0;
+  padding: 3px;
   margin: 0;
+  border-radius: 3px;
+  border: solid 1px #2f3542;
 }
 
 .form-row {
@@ -186,6 +208,7 @@ input[type=text], input[type=email], textarea {
 .label {
   flex: 0;
   min-width: 100px;
+  color: #2f3542;
 }
 
 .contact__input {
@@ -194,6 +217,7 @@ input[type=text], input[type=email], textarea {
 
 textarea {
   height: 150px;
+  resize: none;
 }
 
 .form-row button {
@@ -232,6 +256,7 @@ textarea {
 
   .contact__form {
     max-width: 650px;
+    padding: 0;
   }
 }
 
