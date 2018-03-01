@@ -2,7 +2,7 @@
 
 * {
   margin: 0;
-  padding: 0;5vh
+  padding: 0;5vh#f9985
 }
 
 html {
@@ -278,6 +278,36 @@ textarea {
 }
 
 
+/* Footer */
+
+footer {
+  height: 8vh; 
+  background-color: #f9985c; 
+}
+ass="label">
+					<label for="newsletter">Subscribe</label>
+				</div>
+				<div class="contact__input">
+					<input type="checkbox" name="newsletter" id="newsletter" checked>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="label"></div>
+				<button type="submit" class="contact__button">Submit</button>
+			</div>
+		</form>
+
+	</section>
+
+	<footer>
+		<ul> 
+			<li><a href="#about">About</a>/</li>
+			<li><a href="#team">Team</a>/</li>
+			<li><a href="#contact">Contact</a></li>
+		</ul>
+	</footer>
 
 
-/* End */
+</body>
+
+</html>
