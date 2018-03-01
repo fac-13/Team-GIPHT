@@ -94,27 +94,26 @@ flex-direction: column;
 justify-content: center; /*content aligned horizontally */
 align-items: center; /*content aligned vertically*/
 }
-
-.team__profile {
+.team__row {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
-  margin: 3%; 
-  height: 75vh;
-  width: 100%;
-  background-color: black;
-}
 
+}
 .team__content{
   display: flex;
   flex-direction: column; 
   align-items: center;
   justify-content: center;
   background-color: white; 
+  border: 3px solid #0a0a0a;
   border-radius: 5px;
-  width: 90%;
-  height: 90%;
+  margin: 3%; 
+  height: 75vh;
+  width: 100%;
 }
 
 .team__content img {
@@ -139,16 +138,28 @@ align-items: center; /*content aligned vertically*/
 .contact {
   display: flex;
   justify-content: center;
+  flex-direction: column;
   margin: 0 auto;
   width: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
+}
+
+.contact__heading {
+  margin-bottom: 10px;
+  max-height: 40px;
+  text-align: center;
 }
 
 .contact__form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 90%;
   padding: 20px;
+  margin: 0 auto;
+}
+
+input[type=text], input[type=email], .contact__button {
+  height: 25px;
 }
 
 input[type=text], input[type=email], textarea {
@@ -167,7 +178,8 @@ input[type=text], input[type=email], textarea {
 }
 
 .label {
-  flex: 1;
+  flex: 0;
+  min-width: 100px;
 }
 
 .contact__input {
@@ -186,6 +198,8 @@ textarea {
 /* Media Queries */
 
 @media screen and (min-width: 650px) {
+  
+  /* Nav */
   nav ul {
     justify-content: flex-end;
     flex-direction: row;
@@ -195,8 +209,22 @@ textarea {
     margin: 2%;
     font-size: 1.2rem;
   }
-}
+  
+  /* Team */
+  .team {
+    margin: 10%;
+  }
+  
+  .team__row {
+    flex-direction: row;
+    width: 100%;
+    
+  }
 
+  .contact__form {
+    max-width: 650px;
+  }
+}
 
 
 /* End */
