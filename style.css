@@ -150,6 +150,10 @@ align-items: center; /*content aligned vertically*/
   padding: 20px;
 }
 
+input[type=text], input[type=email], .contact__button {
+  height: 25px;
+}
+
 input[type=text], input[type=email], textarea {
   width: 100%;
   padding: 0;
@@ -166,7 +170,8 @@ input[type=text], input[type=email], textarea {
 }
 
 .label {
-  flex: 1;
+  flex: 0;
+  min-width: 100px;
 }
 
 .contact__input {
@@ -208,8 +213,10 @@ textarea {
     
   }
 
+  .contact__form {
+    max-width: 40%;
+  }
 }
-
 
 
 /* End */
