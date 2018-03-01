@@ -16,7 +16,7 @@ html {
 .contact__form button {
   color: #fafafa;
   font-size: 1.1rem;
-  background-color: #2d98da;
+  background-color: #16547b;
   height: 35px;
   width: 300px;
   display: inline-block;
@@ -34,7 +34,7 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background-color: #2d98da;
+  background-color: #16547b;
   margin: 0;
   padding: 0;
 
@@ -65,7 +65,7 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #fafafa;
-  border-bottom: solid 1px #2d98da;
+  border-bottom: solid 1px #16547b;
   transition: border-bottom 0.5s;
 }
 
@@ -107,7 +107,7 @@ nav ul li a:active {
 .about__text h1:after {
   display: block;
   height: 2px;
-  background-color: #2d98da;
+  background-color: #16547b;
   content: " ";
   width: 150px;
   margin: 0 auto;
