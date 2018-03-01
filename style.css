@@ -145,6 +145,11 @@ align-items: center; /*content aligned vertically*/
   padding-bottom: 10px;
 }
 
+.contact__msg {
+  margin: 20px auto;
+  text-align: center;
+}
+
 .contact__heading {
   margin-bottom: 10px;
   max-height: 40px;
