@@ -37,11 +37,8 @@ nav {
   background-color: #2d98da;
   margin: 0;
   padding: 0;
-
   height: 50px;
-
   width: 100%;
-
   position: fixed;
   z-index: 1;
 
@@ -252,6 +249,13 @@ textarea {
   width: 100px;
 }
 
+/* Footer */
+
+footer {
+  background-color: #2d98da;
+  height: 50px;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 650px) {
@@ -316,36 +320,3 @@ textarea {
 }
 
 
-/* Footer */
-
-footer {
-  height: 8vh; 
-  background-color: #f9985c; 
-}
-ass="label">
-					<label for="newsletter">Subscribe</label>
-				</div>
-				<div class="contact__input">
-					<input type="checkbox" name="newsletter" id="newsletter" checked>
-				</div>
-			</div>
-			<div class="form-row">
-				<div class="label"></div>
-				<button type="submit" class="contact__button">Submit</button>
-			</div>
-		</form>
-
-	</section>
-
-	<footer>
-		<ul> 
-			<li><a href="#about">About</a>/</li>
-			<li><a href="#team">Team</a>/</li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</footer>
-
-
-</body>
-
-</html>
