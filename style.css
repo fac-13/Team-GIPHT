@@ -151,6 +151,10 @@ align-items: center; /*content aligned vertically*/
   padding: 20px;
 }
 
+input[type=text], input[type=email], .contact__button {
+  height: 25px;
+}
+
 input[type=text], input[type=email], textarea {
   width: 100%;
   padding: 0;
@@ -197,9 +201,22 @@ textarea {
     font-size: 1.2rem;
   }
 
-  
+  .contact__form {
+    padding: 0 7%;
+  }
 }
 
+@media screen and (min-width: 800px) {
+  .contact__form {
+    padding: 0 10%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .contact__form {
+    padding: 0 20%;
+  }
+}
 
 
 /* End */
