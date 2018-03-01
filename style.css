@@ -187,6 +187,11 @@ align-items: center; /*content aligned vertically*/
   height: 100vh;
 }
 
+.contact__msg {
+  margin: 20px auto;
+  text-align: center;
+}
+
 .contact__heading {
   margin-bottom: 10px;
   max-height: 40px;
