@@ -172,6 +172,16 @@ align-items: center; /*content aligned vertically*/
   width: 100%;
 }
 
+.team__content:after {
+  display: block;
+  height: 2px;
+  background-color: #16547b;
+  content: " ";
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
 .team__content img {
   border: 2px solid #16547b;
   border-radius: 50%; 
@@ -340,7 +350,12 @@ footer {
 
   .team__content {
     border-radius: 5px;
+  } 
+
+  .team__content:after {
+    display: none;
   }
+
 
   .team__links img {
     width: 5vh;
