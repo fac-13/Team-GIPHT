@@ -57,4 +57,8 @@ Our website is fully viewable with Javascript disabled
 * We first drew a sketch of how we wanted the website to look in mobile, tablet and desktop.
 * We discussed using BEM syntax for class names.
 * We then split into two sub-groups to work on the nav and about section.
-* On day 4 we changed the sub-groups for working on the team and contact sections
+* On day 4 we changed the sub-groups for working on the team and contact sections.
+* Our priority was the basic structure of the layout including responding to screen sizes.
+* After that we focused on the aesthetics of the site re. colour scheme, fonts, transition effects.
+* We left the content for last to be done individuallly.
+* After the code review we went through all issues raised and order them by priority and diveded them between the team to close.
