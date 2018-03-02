@@ -277,9 +277,21 @@ textarea {
 
 /* Footer */
 
-footer {
-  background-color: #2d98da;
+.footer {
+  display: flex;
+  align-items: center;
+  background-color: #16547b;
   height: 80px;
+}
+
+.footer__content {
+  margin: 0 auto;
+  color: #fafafa;
+  text-align: center;
+}
+
+.footer__content--upper {
+  text-transform: uppercase;
 }
 
 /* Media Queries */
