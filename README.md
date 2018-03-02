@@ -1,4 +1,10 @@
-# Team-GIPHT
-Team comprising of Giulia, Isaac, Phat and Tammy
+# Team GIPHT Portfolio Website
+Team GIPHT is comprised of Giulia, Isaac, Phat and Tammy
 
-https://hackmd.io/s/BJVnEar_M
+## WHY
+
+
+## WHAT
+
+
+## HOW
