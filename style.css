@@ -2,7 +2,7 @@
 
 * {
   margin: 0;
-  padding: 0;5vh
+  padding: 0;
 }
 
 html {
@@ -37,14 +37,17 @@ nav {
   background-color: #16547b;
   margin: 0;
   padding: 0;
-
-  height: 50px;
-
+  height: 80px;
   width: 100%;
-
   position: fixed;
   z-index: 1;
+  color: #fafafa;
 
+
+}
+
+.nav__logotype {
+  display: none;
 }
 
 nav ul {
@@ -67,6 +70,8 @@ nav ul li a {
   color: #fafafa;
   border-bottom: solid 1px #16547b;
   transition: border-bottom 0.5s;
+  color: #fafafa;
+  font-size: 1.4rem;
 }
 
 nav ul li a:hover,
@@ -127,7 +132,7 @@ nav ul li a:active {
 
 .team {
   text-align: center;
-  padding-top: 5vh;
+  padding: 3vh 0;
   min-height: 100vh;
 }
 
@@ -141,6 +146,11 @@ display:flex;
 flex-direction: column;
 justify-content: space-around;
 align-items: center; /*content aligned vertically*/
+}
+
+.team h1{
+  font-size: 1.8rem;
+  padding-bottom: 5vh;
 }
 
 .team__row {
@@ -261,14 +271,37 @@ textarea {
   width: 100px;
 }
 
+/* Footer */
+
+footer {
+  background-color: #2d98da;
+  height: 80px;
+}
+
 /* Media Queries */
 
 @media screen and (min-width: 650px) {
   
   /* Nav */
+  .nav__logotype {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+  }
+
+  .nav__logotype img {
+    height: 30px;
+    margin: 0 10px;
+  }
+  
+  .nav__logotype--upper {
+    text-transform: uppercase;
+  }
+
   nav ul {
     justify-content: flex-end;
     flex-direction: row;
+    width: 50%;
   }
 
   nav ul li {
@@ -332,6 +365,3 @@ textarea {
 }
 
 
-
-
-/* End */
