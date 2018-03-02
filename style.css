@@ -190,6 +190,10 @@ align-items: center; /*content aligned vertically*/
   width: 80%;
 }
 
+.team__links li:hover {
+  transform: scale(1.4);
+}
+
 .team__links img {
   border: none;
   width: 10vw;
