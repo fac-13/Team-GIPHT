@@ -11,22 +11,6 @@ html {
   color: #2f3542;
 }
 
-/* Button */
-
-.contact__form button {
-  color: #fafafa;
-  font-size: 1.1rem;
-  background-color: #16547b;
-  height: 35px;
-  width: 300px;
-  display: inline-block;
-  padding: 7px auto;
-  font-weight: 300;
-  text-decoration: none;
-  border-radius: 200px;
-  border: 0;
-}
-
 /* Nav Bar */
 
 nav {
@@ -204,6 +188,10 @@ align-items: center; /*content aligned vertically*/
   width: 80%;
 }
 
+.team__links li:hover {
+  transform: scale(1.4);
+}
+
 .team__links img {
   border: none;
   width: 10vw;
@@ -285,11 +273,39 @@ textarea {
   width: 100px;
 }
 
+/* Button */
+
+.contact__form button {
+  color: #fafafa;
+  font-size: 1.1rem;
+  background-color: #16547b;
+  height: 35px;
+  width: 300px;
+  display: inline-block;
+  padding: 7px auto;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  border: 0;
+}
+
 /* Footer */
 
-footer {
+.footer {
+  display: flex;
+  align-items: center;
   background-color: #16547b;
   height: 80px;
+}
+
+.footer__content {
+  margin: 0 auto;
+  color: #fafafa;
+  text-align: center;
+}
+
+.footer__content--upper {
+  text-transform: uppercase;
 }
 
 /* Media Queries */
