@@ -11,22 +11,6 @@ html {
   color: #2f3542;
 }
 
-/* Button */
-
-.contact__form button {
-  color: #fafafa;
-  font-size: 1.1rem;
-  background-color: #16547b;
-  height: 35px;
-  width: 300px;
-  display: inline-block;
-  padding: 7px auto;
-  font-weight: 300;
-  text-decoration: none;
-  border-radius: 200px;
-  border: 0;
-}
-
 /* Nav Bar */
 
 nav {
@@ -136,8 +120,7 @@ nav ul li a:active {
   min-height: 100vh;
 }
 
-.team h1 {
-  color: #fafafa;
+.team__heading {
   font-size: 2rem;
 }
 
@@ -169,12 +152,22 @@ align-items: center; /*content aligned vertically*/
   justify-content: space-around;
   background-color: white; 
   margin: 3%; 
-  height: 75vh;
+  min-height: 75vh;
   width: 100%;
 }
 
+.team__content:after {
+  display: block;
+  height: 2px;
+  background-color: #16547b;
+  content: " ";
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
 .team__content img {
-  border: 2px solid black;
+  border: 2px solid #16547b;
   border-radius: 50%; 
   width: 60%;
 }
@@ -182,6 +175,11 @@ align-items: center; /*content aligned vertically*/
 .team__text h2 {
   margin-bottom: 3vh;
 }
+
+.team__text p {
+  margin: 5%; 
+}
+
 .team__links {
   display: flex;
   list-style-type: none;
@@ -275,6 +273,22 @@ textarea {
   width: 100px;
 }
 
+/* Button */
+
+.contact__form button {
+  color: #fafafa;
+  font-size: 1.1rem;
+  background-color: #16547b;
+  height: 35px;
+  width: 300px;
+  display: inline-block;
+  padding: 7px auto;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 200px;
+  border: 0;
+}
+
 /* Footer */
 
 .footer {
@@ -337,6 +351,10 @@ textarea {
     background-color: #134a6d;
     padding-top: 10vh;
   }
+
+  .team__heading {
+    color: #fafafa;
+  }
   
   .team__row {
     flex-direction: row;
@@ -348,7 +366,12 @@ textarea {
 
   .team__content {
     border-radius: 5px;
+  } 
+
+  .team__content:after {
+    display: none;
   }
+
 
   .team__links img {
     width: 5vh;
