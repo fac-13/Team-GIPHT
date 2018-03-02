@@ -173,7 +173,7 @@ align-items: center; /*content aligned vertically*/
 }
 
 .team__content img {
-  border: 2px solid black;
+  border: 2px solid #16547b;
   border-radius: 50%; 
   width: 60%;
 }
