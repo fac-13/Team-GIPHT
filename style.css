@@ -136,8 +136,7 @@ nav ul li a:active {
   min-height: 100vh;
 }
 
-.team h1 {
-  color: #fafafa;
+.team__heading {
   font-size: 2rem;
 }
 
@@ -325,6 +324,10 @@ footer {
   .team {
     background-color: #134a6d;
     padding-top: 10vh;
+  }
+
+  .team__heading {
+    color: #fafafa;
   }
   
   .team__row {
