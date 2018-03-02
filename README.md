@@ -53,3 +53,8 @@ Our website is fully viewable with Javascript disabled
 > so that I **don't feel like I'm completely in the stone age**.
 
 ## HOW
+
+* We first drew a sketch of how we wanted the website to look in mobile, tablet and desktop.
+* We discussed using BEM syntax for class names.
+* We then split into two sub-groups to work on the nav and about section.
+* On day 4 we changed the sub-groups for working on the team and contact sections
