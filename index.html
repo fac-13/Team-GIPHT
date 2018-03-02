@@ -14,26 +14,26 @@
 	<!-- Nav Bar -->
 	<nav class="nav" role="navigation">
 		<div class="nav__logotype">
-			<img src="img/FAC.png" title="Founder and Coders" alt="Founder and Coders logo">
+			<img class="nav__logo" src="img/FAC.png" title="Founder and Coders" alt="Founder and Coders logo">
 			<h2>Team
 				<span class="nav__logotype--upper">Gipht</span>
 			</h2>
 		</div>
-		<ul>
-			<li>
+		<ul class="nav__list">
+			<li class="nav__link">
 				<a href="#about">About</a>
 			</li>
-			<li>
+			<li class="nav__link">
 				<a href="#team">Team</a>
 			</li>
-			<li>
+			<li class="nav__link">
 				<a href="#contact">Contact</a>
 			</li>
 		</ul>
 	</nav>
 
 
-	<!-- Hero Header -->
+	<!-- About section -->
 	<section class="about" id="about">
 		<div class="about__text">
 			<h1 tabindex="0">Team
@@ -51,8 +51,8 @@
 		<h2 class="team__heading" tabindex="0">Our Team</h2>
 		<div class="team__container">
 			<div class="team__row">
-				<div class="team__content" tabindex="0">
-					<img src="img/Giulia_portrait.jpg" alt="Portrait of Giulia" title="Giulia">
+				<div class="team__profile" tabindex="0">
+					<img class="team__portrait" src="img/Giulia_portrait.jpg" alt="Portrait of Giulia" title="Giulia">
 					<div class="team__text">
 						<h2>Giulia</h2>
 						<p>A philosophy graduate turned software developer, interested in using technology to make the world a better place. She loves learning new things, hiking, cooking and exploring London.</p>
@@ -76,8 +76,8 @@
 					</ul>
 				</div>
 
-				<div class="team__content" tabindex="0">
-					<img src="img/isaac.jpeg" alt="Portrait of Isaac" title="Isaac">
+				<div class="team__profile" tabindex="0">
+					<img class="team__portrait" src="img/isaac.jpeg" alt="Portrait of Isaac" title="Isaac">
 					<div class="team__text">
 						<h2>Isaac</h2>
 						<p>Left his career to develop full time in a desire to make a more meaningful impact. Experienced with design, IT support and CS curriculum. Likes to paddle board with crocodiles when the canal isn’t frozen.</p>
@@ -103,8 +103,8 @@
 			</div>
 
 			<div class="team__row">
-				<div class="team__content" tabindex="0">
-					<img src="img/phat.jpeg" alt="Portrait of Phat" title="Phat">
+				<div class="team__profile" tabindex="0">
+					<img class="team__portrait" src="img/phat.jpeg" alt="Portrait of Phat" title="Phat">
 					<div class="team__text">
 						<h2>Phat</h2>
 						<p>With a background in design, focuses mainly on providing great aesthetics, ensuring websites look great and function well. Great interest in physical fitness.</p>
@@ -128,8 +128,8 @@
 					</ul>
 				</div>
 
-				<div class="team__content" tabindex="0">
-					<img src="img/tammy.jpg" alt="Portrait of Tammy" title="Tammy">
+				<div class="team__profile" tabindex="0">
+					<img class="team__portrait" src="img/tammy.jpg" alt="Portrait of Tammy" title="Tammy">
 					<div class="team__text">
 							<h2>Tammy</h2>
 							<p>Enjoys front-end development with a focus on accessibility having spent time before in deaf/deaf-blind communities as a Sign Language Interpreter. Loves cooking, baking and attending meetups.</p>
@@ -162,31 +162,31 @@
 		<p class="contact__msg">If you are interested in discussing a potential project or are seeking design consultation,
 			<br> please leave us a message below!</p>
 		<form class="contact__form" role="form" tabindex="0">
-			<div class="form-row">
-				<div class="label">
+			<div class="contact__row">
+				<div class="contact__label">
 					<label for="name">Name</label>
 				</div>
 				<div class="contact__input">
 					<input type="text" name="name" id="name" required>
 				</div>
 			</div>
-			<div class="form-row">
-				<div class="label">
+			<div class="contact__row">
+				<div class="contact__label">
 					<label for="email">Email</label>
 				</div>
 				<div class="contact__input">
 					<input type="email" name="email" id="email" required>
 				</div>
 			</div>
-			<div class="form-row">
-				<div class="label">
+			<div class="contact__row">
+				<div class="contact__label">
 					<label for="message">Message</label>
 				</div>
 				<div class="contact__input">
 					<textarea name="message" id="message"></textarea>
 				</div>
 			</div>
-			<div class="form-row">
+			<div class="contact__row">
 				<button type="submit" class="contact__button">Submit</button>
 			</div>
 		</form>

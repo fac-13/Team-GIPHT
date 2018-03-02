@@ -13,7 +13,7 @@ html {
 
 /* Nav Bar */
 
-nav {
+.nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -26,15 +26,13 @@ nav {
   position: fixed;
   z-index: 1;
   color: #fafafa;
-
-
 }
 
 .nav__logotype {
   display: none;
 }
 
-nav ul {
+.nav__list {
   display: flex;
   list-style-type: none;
   flex-direction: row;
@@ -43,13 +41,13 @@ nav ul {
   width: 100%;
 }
 
-nav ul li {
+.nav__link {
   margin: 3%;
   font-size: 1.3rem;
   padding: 0;
 }
 
-nav ul li a {
+.nav__link a {
   text-decoration: none;
   color: #fafafa;
   border-bottom: solid 1px #16547b;
@@ -58,8 +56,8 @@ nav ul li a {
   font-size: 1.4rem;
 }
 
-nav ul li a:hover,
-nav ul li a:active {
+.nav__link a:hover,
+.nav__link a:active {
   border-bottom: solid 1px #fafafa;
 }
 
@@ -116,12 +114,14 @@ nav ul li a:active {
 
 .team {
   text-align: center;
-  padding: 3vh 0;
+  padding: 80px 0;
   min-height: 100vh;
 }
 
 .team__heading {
   font-size: 2rem;
+  padding: 1vh;
+
 }
 
 .team__container {
@@ -145,7 +145,7 @@ align-items: center; /*content aligned vertically*/
   text-align: center;
 
 }
-.team__content{
+.team__profile{
   display: flex;
   flex-direction: column; 
   align-items: center;
@@ -156,7 +156,7 @@ align-items: center; /*content aligned vertically*/
   width: 100%;
 }
 
-.team__content:after {
+.team__profile:after {
   display: block;
   height: 2px;
   background-color: #16547b;
@@ -166,14 +166,14 @@ align-items: center; /*content aligned vertically*/
   margin-top: 10px;
 }
 
-.team__content img {
+.team__portrait {
   border: 2px solid #16547b;
   border-radius: 50%; 
   width: 60%;
 }
 
 .team__text h2 {
-  margin-bottom: 0 3vh;
+  margin: 3vh 0;
 }
 
 .team__text p {
@@ -209,18 +209,15 @@ align-items: center; /*content aligned vertically*/
   height: 100vh;
 }
 
-.contact h2 {
+.contact__heading {
   font-size: 2rem;
+  margin-bottom: 10px;
+  max-height: 40px;
+  text-align: center;
 }
 
 .contact__msg {
   margin: 20px auto;
-  text-align: center;
-}
-
-.contact__heading {
-  margin-bottom: 10px;
-  max-height: 40px;
   text-align: center;
 }
 
@@ -232,11 +229,11 @@ align-items: center; /*content aligned vertically*/
   margin: 0 auto;
 }
 
-input[type=text], input[type=email], .contact__button {
+input[type=text], input[type=email] {
   height: 25px;
 }
 
-input[type=text], input[type=email], textarea {
+input[type=text], input[type=email] {
   width: 100%;
   padding: 3px;
   margin: 0;
@@ -244,7 +241,7 @@ input[type=text], input[type=email], textarea {
   border: solid 1px #2f3542;
 }
 
-.form-row {
+.contact__row {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -253,7 +250,7 @@ input[type=text], input[type=email], textarea {
   padding: 5px;
 }
 
-.label {
+.contact__label {
   flex: 0;
   min-width: 100px;
   color: #2f3542;
@@ -263,19 +260,18 @@ input[type=text], input[type=email], textarea {
   flex: 2;
 }
 
-textarea {
+.contact__input textarea {
   height: 150px;
   resize: none;
+  width: 100%;
+  padding: 3px;
+  margin: 0;
+  border-radius: 3px;
+  border: solid 1px #2f3542;
 }
 
-.form-row button {
+.contact__button {
   align-self: flex-start;
-  width: 100px;
-}
-
-/* Button */
-
-.contact__form button {
   color: #fafafa;
   font-size: 1.1rem;
   background-color: #16547b;
@@ -319,7 +315,7 @@ textarea {
     width: 50%;
   }
 
-  .nav__logotype img {
+  .nav__logo {
     height: 30px;
     margin: 0 10px;
   }
@@ -328,13 +324,13 @@ textarea {
     text-transform: uppercase;
   }
 
-  nav ul {
+  .nav__list {
     justify-content: flex-end;
     flex-direction: row;
     width: 50%;
   }
 
-  nav ul li {
+  .nav__link {
     margin: 2%;
     font-size: 1.2rem;
   }
@@ -364,11 +360,11 @@ textarea {
     min-width: 120px;
   }
 
-  .team__content {
+  .team__profile {
     border-radius: 5px;
   } 
 
-  .team__content:after {
+  .team__profile:after {
     display: none;
   }
 
